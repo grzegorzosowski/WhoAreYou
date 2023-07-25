@@ -4,9 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 On the command-line or Terminal, navigate to the root of the directory which you downloaded and run:
 
-- If you have npm: `npm install`
-- If you have yarn: `yarn install`
+- `npm install`
+- `npm run dev`
 
 You need to copy the `.env.example` file, rename it as `.env`, and then configure the variables within it.
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
