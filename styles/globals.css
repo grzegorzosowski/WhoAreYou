@@ -2,6 +2,29 @@
   --hover-button-color: #393e46;
   --hover-button-background-color: #41a584;
 }
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d3d3d3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #7e7e7e;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #333;
+}
 
 * {
   box-sizing: border-box;
