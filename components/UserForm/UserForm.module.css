@@ -1,0 +1,28 @@
+.form {
+  width: 100%;
+  text-align: center;
+}
+
+.form__inputContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+
+.form__button {
+  width: 30%;
+  transition: all 0.25s ease-in-out;
+}
+
+.input {
+  width: 70%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input__error {
+  border: 1px solid red; /* Dodaj styl obramowania na czerwony kolor */
+}

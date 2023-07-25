@@ -1,0 +1,141 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  padding-top: 4rem;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: auto;
+}
+
+.login__button {
+  position: absolute;
+  right: 0;
+  width: 100px;
+  transition: all 0.25s ease-in-out;
+}
+
+.history__list {
+  list-style: none;
+  padding-bottom: 2rem;
+  width: 100%;
+  margin: 2rem 0;
+  background-color: #393e46;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #eeeeee;
+}
+
+.history__listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 3px solid #ccc;
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.history__listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #777;
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.content__item:last-child {
+  border-bottom: none;
+}
+
+.active {
+  border-bottom: none;
+}
+
+.active,
+.history__listItem:hover {
+  background-color: #333333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pagination__button {
+  padding: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #393e46;
+  color: #eeeeee;
+  cursor: pointer;
+  box-shadow: #000 0px 0px 5px;
+  list-style: none;
+}
+
+.pagination__button:hover {
+  background-color: #eeeeee;
+  color: #393e46;
+  transition: all 0.25s ease-in-out;
+}
+
+.pagination__button--active {
+  background-color: #00adb5;
+  color: #eeeeee;
+  box-shadow: #eeeeee 0px 0px 5px;
+}
+
+.pagination__break {
+  list-style: none;
+}
+
+.pagination__buttonPrevNext {
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #393e46;
+  color: #eeeeee;
+  cursor: pointer;
+  box-shadow: #000 0px 0px 5px;
+  list-style: none;
+}
+
+.pagination__buttonDisabled {
+  padding: 0.5rem;
+  margin: 0 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #595d64;
+  color: #807f7f;
+  cursor: default;
+  box-shadow: #000 0px 0px 5px;
+  list-style: none;
+}
+
+.pagination__buttonDisabled:hover {
+  background-color: #595d64;
+  color: #807f7f;
+  box-shadow: #000 0px 0px 5px;
+}
+
+.pagination__link {
+  padding: 0.5rem;
+}
+
+.emptyList {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+}

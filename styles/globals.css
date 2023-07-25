@@ -1,0 +1,25 @@
+:root {
+  --hover-button-color: #393e46;
+  --hover-button-background-color: #41a584;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+body {
+  color: #eeeeee;
+  max-width: 100vw;
+  min-width: 300px;
+  background: #232931;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

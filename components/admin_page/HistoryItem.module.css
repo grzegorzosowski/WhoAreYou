@@ -1,0 +1,28 @@
+.content {
+  width: 90%;
+  margin: auto;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #555;
+}
+.history__listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #777;
+  width: 90%;
+  margin: auto;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: none;
+}
+
+.active,
+.history__listItem:hover {
+  background-color: #333333;
+}

@@ -1,0 +1,29 @@
+.content__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #333;
+  width: 100%;
+  margin: auto;
+  gap: 1rem;
+}
+
+.content__item:last-child {
+  border-bottom: none;
+}
+
+.content__item_nationalityData {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.content__item_genderData {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 0.5rem 0;
+}

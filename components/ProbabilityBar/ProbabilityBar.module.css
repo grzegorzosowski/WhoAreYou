@@ -1,0 +1,13 @@
+.container {
+  border: 1px solid #d13e3e;
+  border-radius: 5px;
+}
+
+.bar {
+  height: 20px;
+  background-color: #d13e3e;
+  width: 0%;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 3px;
+}

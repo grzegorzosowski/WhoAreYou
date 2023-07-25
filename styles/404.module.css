@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.backward_button {
+  margin-top: 1rem;
+  background-color: #222831;
+  color: rgb(185, 194, 247);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.backward_button:hover {
+  background-color: #393e46;
+  transition: background-color 0.25s ease-in-out;
+}

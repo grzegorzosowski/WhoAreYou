@@ -1,0 +1,23 @@
+.input__element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.input__element input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  box-shadow: #000 2px 2px 5px;
+  background-color: #333333;
+  color: #eeeeee;
+}
+
+.input__errorMessage {
+  color: rgb(226, 79, 79);
+  font-size: 0.9rem;
+  padding: 0.1rem;
+  margin-bottom: 0.4rem;
+}
