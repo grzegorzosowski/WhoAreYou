@@ -7,6 +7,8 @@ import { UserResults } from '@/components/UserResults/UserResults';
 import { Button } from '@/components/Button/Button';
 import { Loader } from '@/components/Loader/Loader';
 import { UserGenderDataWithoutCount, UserNationalityDataWithoutCount } from '@/lib/types';
+import { GetServerSideProps } from 'next';
+import { getUserFromSession } from '@/lib/auth/user';
 
 export default function Home() {
   const [userGenderData, setUserGenderData] = useState<UserGenderDataWithoutCount>();
@@ -54,3 +56,18 @@ export default function Home() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+  const user = await getUserFromSession(req);
+  if (user) {
+    return {
+      redirect: {
+        destination: '/admin',
+        permanent: false,
+      },
+    };
+  }
+  return {
+    props: {},
+  };
+};
