@@ -24,6 +24,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         userGenderData: foundName.genderData,
         userNationalityData: foundName.nationalityData,
       });
+      return;
     }
   } catch (error) {
     console.error('DB error: ', error);
