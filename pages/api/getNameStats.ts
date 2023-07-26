@@ -7,6 +7,10 @@ import { findNameInRequestHistory, saveRequest } from '@/lib/db/mongoRequests';
 import { UserGenderData, UserNationalityData } from '@/lib/types';
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
+  const { method } = req;
+  if (method !== 'GET') {
+    return res.status(405).json({ message: 'Method not allowed' });
+  }
   const { name } = req.query as { name: string };
   if (!isValidName(name)) {
     res.status(400).json({
